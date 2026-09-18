@@ -1,6 +1,5 @@
-// Replace these two values with your Supabase Project URL and Publishable Key.
-const SUPABASE_URL="YOUR_SUPABASE_URL";
-const SUPABASE_PUBLISHABLE_KEY="YOUR_SUPABASE_PUBLISHABLE_KEY";
+const SUPABASE_URL="https://bfpsvmhbfbrwziqfpjje.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_UbfDwUiLFQ06SBDie2W51Q_50w74u1s";
 let supabaseClient=null,transactions=[],savingsGoal=10000;const budgetLimit=10000;
 const categoryColors={Food:'#f06292',Transport:'#42a5e8',Entertainment:'#ffd05a',Bills:'#4caf50',Health:'#9c27b0',Shopping:'#ff9800',Other:'#90a4ae'};const money=v=>'₹'+Number(v||0).toFixed(2);
 function configured(){return SUPABASE_URL!=='YOUR_SUPABASE_URL'&&SUPABASE_PUBLISHABLE_KEY!=='YOUR_SUPABASE_PUBLISHABLE_KEY'}function status(m,t=''){const e=document.getElementById('dbStatus');e.textContent=m;e.className='db-status '+t}
